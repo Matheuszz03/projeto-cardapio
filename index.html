@@ -9,14 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Cardápio</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
         <div class="bx-menu" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="#home">Home</a></li> 
-            <li><a href="card.html">Comidas</a></li>  
+            <li><a href="#menu">Comidas</a></li>  
             <li><a href="#bebidas">Bebidas</a></li>   
         </ul>
     </header>
@@ -25,7 +29,7 @@
         <div class="home-text">
             <h1>Cardápio Completo</h1>
             <h2>Food The <br> Most Precious Things</h2>
-            <a href="#" class="btn">Menu de Hoje</a>
+            <a href="#menu" class="btn">Menu de Hoje</a>
         </div>
 
         <div class="home-img">
@@ -33,7 +37,7 @@
         </div>
     </section>
     <!-- menu start -->
-    <section class="menu" id="menu">
+    <section class="menu" id="menu" name="comidas">
         <div class="heading">
             <span>Menu Completo</span>
             <h1>Rápido, saboroso e ótimo preço</h1>
@@ -44,10 +48,10 @@
                 <div class="box-img">
                     <img src="img/food1.png" alt="Hamburguer">
                 </div>
-                <h2>Hambúrguer de Frango</h2>
+                <h2>Frango</h2>
                 <h3>Tasty Food</h3>
                 <span>R$11.00</span>
-                <i class='bx bx-cart-alt'></i>
+                <i id="cart" class='bx bx-cart-alt'></i>
             </div>
             <div class="box">
                 <div class="box-img">
@@ -56,7 +60,7 @@
                 <h2>Hambúrguer</h2>
                 <h3>Tasty Food</h3>
                 <span>R$11.00</span>
-                <i class='bx bx-cart-alt'></i>
+                <i id="cart" class='bx bx-cart-alt'></i>
             </div>
             <div class="box">
                 <div class="box-img">
@@ -65,10 +69,13 @@
                 <h2>Frango Frito</h2>
                 <h3>Tasty Food</h3>
                 <span>R$11.00</span>
-                <i class='bx bx-cart-alt'></i>
+                <i id="cart" class='bx bx-cart-alt'></i>
             </div>
             
         </div>
     </section>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -175,6 +175,9 @@ section {
     transform: scale(1.1) translateY(5px);
     cursor: pointer;
 }
+.box:active {
+    transform: translateY(4px);
+}
 
 @media (max-width: 1560px) {
     header{
